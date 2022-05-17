@@ -15,7 +15,7 @@ body {
 /* headings and logo */
 
 h1, h2 {
-    font-family: Oswalt, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -34,7 +34,7 @@ h1, h2 {
     letter-spacing: 4px;
 }
 
-#menu, #logo{
+#menu, #logo {
     line-height: 75px;
 }
 
@@ -57,17 +57,17 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
-    width: 100%; 
+    width: 100%;
     overflow: hidden;
 
     position: relative;
 }
 
-#cover-text, cover-text h2 {
+#cover-text, #cover-text h2 {
     color: #fff;
 }
 
@@ -186,7 +186,7 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url("../images/ethos-center-image.jpg") no-repeat center center;
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
@@ -194,7 +194,7 @@ hr {
 /* event times */
 
 #times {
-    background-image: url("../images/dublin-city.webp");
+    background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -204,7 +204,7 @@ hr {
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
     width: 20%;
     height: 300px;
     float: left;
@@ -239,24 +239,24 @@ footer {
     color: #3a3a3a;
 }
 
-/* Gallery */
+/* gallery */
 
 #photos {
     clear: both;
     line-height: 0;
     column-count: 4;
-    column-gap: 0; 
+    column-gap: 0;
 }
 
 #photos > img {
     width: 100%;
 }
 
-/* Media queries */ 
+/* Media queries */
 
-/* For larger to meddium screen size from 1200px wide and down */
+/* For larger to medium screen size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
-    #club-ethos{
+    #club-ethos {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
@@ -267,7 +267,7 @@ footer {
         margin: 0;
     }
 
-    #left-about, #right-about{
+    #left-about, #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -280,12 +280,19 @@ footer {
         padding: 0;
     }
 
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
-       display: none; 
+       display: none;
     }
 }
 
-/* For medium screen sizes from 950px and down */
+/* For medium screen sizes from 950px wide and down */
 
 @media screen and (max-width: 950px) {
     
